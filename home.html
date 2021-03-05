@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+
+    <!-- ###################### -->
+    <link rel="stylesheet" href="css.css">
+
+    <!-- ###################### -->
+
+    <title>Udemy's Ftont-end</title>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar shadow-sm navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-coral.svg" width="110" height="32" class="d-inline-block align-top" alt="Udemy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="">Devlopment</a>
+                            <a class="dropdown-item" href="#">Business</a>
+                            <a class="dropdown-item" href="">Design</a>
+                            <a class="dropdown-item" href="#">Marketing</a>
+                            <a class="dropdown-item" href="">Lifestyle</a>
+                            <a class="dropdown-item" href="#">Health & fitness</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="mx-2 my-auto mr-auto d-inline search-size  ">
+                    <div class="input-group search-form">
+                        <button class="btn btn-outline-secondary border border-0" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <input type="text" class="form-control border border-0 formrs"
+                            placeholder="Search for anything">
+                        <span class="input-group-append">
+                        </span>
+                    </div>
+                </form>
+                <ul class="navbar-nav justify-content-end sag">
+                    <li class="nav-item d-md-none d-lg-block">
+                        <a class="nav-link font-weight-light" href="#">Teach on Udemy</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="sepet">
+                                <i class="fas fa-shopping-cart fa-lg"></i>
+                                <span class="urunSayisi">
+                                    2
+                                </span>
+                            </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                            <a href="google.xom">
+                                <div class="urunKapsayici dropdown-item" style="background-image: url('img/red.jpg');">
+                                    <p class="urunAdi">Python ile Makine Öğrenmesi</p>
+                                    <p class="urunAciklamasi">Dr. Şadi Evren Şeker</p>
+                                    <p class="urunFiyati">₺27,99</p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a href="google.xom">
+                                <div class="urunKapsayici dropdown-item" style="background-image: url('img/blue.jpg');">
+                                    <p class="urunAdi">Sıfırdan İleri Seviye Programlama</p>
+                                    <p class="urunAciklamasi">Dr. Şadi Evren Şeker</p>
+                                    <p class="urunFiyati">₺27,99</p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <p class="toplam">
+                                <b> Toplam: ₺55,98 </b><s> ₺689,98</s>
+                            </p>
+                            <a class="dropdown-item sepetegit d-flex justify-content-center" href="#">Sepete Git</a>
+                        </div>
+                    </li>
+                    <form class="form-inline">
+                        <button class="btn btn-outline-info" type="button"> Log in</button>
+                        <button class="btn btn-info" type="button">Sign up</button>
+                    </form>
+                </ul>
+            </div>
+        </nav>
+        <div class="header-kapsayici">
+            <div class="header-img">
+            </div>
+            <div class="shadow header-info">
+                <h1> <b>Dream up</b></h1>
+                <p class="text-info">Ambition accepted. Learn the latest skills to reach your professional goals.
+                </p>
+                <form class=" d-inline info-form">
+                    <div class="input-group info-border">
+                        <input type="text" class="form-control border border-right-0 formrs"
+                            placeholder="What do you want to learn">
+                        <span class="input-group-append">
+                            <button class="btn btn-outline-secondary border border-left-0" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <section>
+        <h4><b>The world's largest selection of courses</b></h4>
+        <p>Choose from 130,000 online video courses with new additions published every month</p>
+        <div class="tabliKurslar">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="python-tab" data-toggle="tab" href="#python" role="tab"
+                        aria-controls="python" aria-selected="true">Python</a>
+                    <a class="nav-item nav-link" id="excel-tab" data-toggle="tab" href="#excel" role="tab"
+                        aria-controls="excel" aria-selected="false">Excel</a>
+                    <a class="nav-item nav-link" id="web-tab" data-toggle="tab" href="#web" role="tab"
+                        aria-controls="web" aria-selected="false">Web Devlopment</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-content" role="tab"
+                        aria-controls="nav-contact" aria-selected="false">JavaScript</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-content" role="tab"
+                        aria-controls="nav-contact" aria-selected="false">Data Science</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-content" role="tab"
+                        aria-controls="nav-contact" aria-selected="false">AWS Certification</a>
+                    <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-content" role="tab"
+                        aria-controls="nav-contact" aria-selected="false">Drawing</a>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="python" role="tabpanel" aria-labelledby="python-tab">
+                    <div class="kurslar">
+                        <div class="kurslarInfo">
+                            <h5>Python ile kariyer olanaklarınızı artırın</h5>
+                            <p>İster makine öğrenimi, ister finans alanında çalışıyor olun, ister web geliştirme veya
+                                veri
+                                bilimi alanında kariyer yapıyor olun, Python öğrenebileceğiniz en önemli becerilerden
+                                biridir.
+                                Python'un basit sözdizimi özellikle masaüstü, web ve iş uygulamaları için uygundur.
+                            </p>
+                            <a class="kursKesfet" href="#">Python kurslarını keşfedin ></a>
+                        </div>
+                        <div class="kursResim">
+                            <img src="img/girl.png" alt="girl">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="excel" role="tabpanel" aria-labelledby="excel-tab">
+                    <div class="kurslar">
+                        <div class="kurslarInfo">
+                            <h5>Excel ile verileri analiz edin ve görselleştirin</h5>
+                            <p>Çalıştığınız sektör ne olursa olsun Microsoft Office Excel, verileri düzenlemek ve
+                                göstermek
+                                için çok değerli bir çalışma tablosu programıdır. Excel, büyük bilgi gruplarını
+                                toplamanıza
+                                ve analiz etmenize yardımcı olacak işlevler, formüller ve pivot tabloları sunar.
+                            </p>
+                            <a class="kursKesfet" href="#">Excel kurslarını keşfedin ></a>
+                        </div>
+                        <div class="kursResim">
+                            <img src="img/girl2.png" alt="girl">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="web" role="tabpanel" aria-labelledby="web-tab">
+                    <div class="kurslar">
+                        <div class="kurslarInfo">
+                            <h5>Web Geliştirme ile web siteleri ve uygulamalar oluşturun</h5>
+                            <p>Web geliştirme dünyası, internetin kendisi kadar geniştir. Sosyal ve meslek
+                                hayatlarımızın
+                                büyük bir kısmı internette yayınlanır. Bu da, giderek daha çok güvendiğimiz web
+                                sitelerini
+                                ve uygulamaları oluşturma, yönetme ve hata ayıklama amacıyla yeni sektörlere yol açar.
+                            </p>
+                            <a class="kursKesfet" href="#">Web Geliştirme kurslarını keşfedin ></a>
+                        </div>
+                        <div class="kursResim">
+                            <img src="img/boy.png" alt="girl">
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-content" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <div class="kurslar">
+                        <div class="kurslarInfo">
+                            <h5>Lorem, ipsum.</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut harum cumque earum dolor!
+                                Culpa
+                                nobis exercitationem, quidem repellat voluptate impedit vitae officiis aperiam
+                                praesentium
+                                vel commodi in reiciendis labore ducimus? Nam, sint aliquid quam debitis in voluptatem
+                                modi
+                                veniam officia temporibus velit dolore fuga ratione natus dignissimos doloribus eaque
+                                voluptas?
+                            </p>
+                            <a class="kursKesfet" href="#">Lorem, ipsum kurslarını keşfedin ></a>
+                        </div>
+                        <div class="kursResim">
+                            <img src="img/boy2.png" alt="girl">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="digerKurslar">
+            <h4><b>Öğrenciler şu anda bunları görüntülüyor:</b></h4>
+            <div class="kartlar">
+                <div class="ogrencilerGoruntuluyor">
+                    <div class="card">
+                        <img class="card-img-top" src="img/blue.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Python ile Makine Öğrenmesi</h5>
+                            <p class="card-text">Dr. Şadi Evren Şeker</p>
+                            <p class="card-rating"> 4.5
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </p>
+                            <p class="card-rating-number">(2500)</p>
+                            <p class="fiyat">₺27,99 </p>
+                            <span class="badge badge-warning">En Çok Satan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ogrencilerGoruntuluyor">
+                    <div class="card">
+                        <img class="card-img-top" src="img/blue.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Python ile Makine Öğrenmesi</h5>
+                            <p class="card-text">Dr. Şadi Evren Şeker</p>
+                            <p class="card-rating"> 4.5
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </p>
+                            <p class="card-rating-number">(2500)
+                            </p>
+                            <p class="fiyat">₺27,99 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ogrencilerGoruntuluyor d-none   d-sm-block">
+                    <div class="card">
+                        <img class="card-img-top" src="img/blue.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Python ile Makine Öğrenmesi</h5>
+                            <p class="card-text">Dr. Şadi Evren Şeker</p>
+                            <p class="card-rating"> 4.5
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </p>
+                            <p class="card-rating-number">(2500)</p>
+                            <p class="fiyat">₺27,99 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ogrencilerGoruntuluyor d-none   d-sm-none  d-md-block">
+                    <div class="card">
+                        <img class="card-img-top" src="img/blue.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Python ile Makine Öğrenmesi</h5>
+                            <p class="card-text">Dr. Şadi Evren Şeker</p>
+                            <p class="card-rating"> 4.5
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </p>
+                            <p class="card-rating-number">(2500)
+                            </p>
+                            <p class="fiyat">₺27,99 </p>
+                            <span class="badge badge-warning">En Çok Satan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ogrencilerGoruntuluyor d-none  d-md-none d-sm-none d-lg-block">
+                    <div class="card">
+                        <img class="card-img-top" src="img/blue.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Python ile Makine Öğrenmesi</h5>
+                            <p class="card-text">Dr. Şadi Evren Şeker</p>
+                            <p class="card-rating"> 4.5
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </p>
+                            <p class="card-rating-number">(2500)
+                            </p>
+                            <p class="fiyat">₺27,99 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="digerKurslar2">
+            <h4><b>"seo" araması yaptığınız için</b></h4>
+            <div class="kartlar">
+                <div class="ogrencilerGoruntuluyor">
+                    <div class="card">
+                        <img class="card-img-top" src="img/blue.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Python ile Makine Öğrenmesi</h5>
+                            <p class="card-text">Dr. Şadi Evren Şeker</p>
+                            <p class="card-rating"> 4.5
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </p>
+                            <p class="card-rating-number">(2500)</p>
+                            <p class="fiyat">₺27,99 </p>
+                            <span class="badge badge-warning">En Çok Satan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ogrencilerGoruntuluyor">
+                    <div class="card">
+                        <img class="card-img-top" src="img/blue.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Python ile Makine Öğrenmesi</h5>
+                            <p class="card-text">Dr. Şadi Evren Şeker</p>
+                            <p class="card-rating"> 4.5
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </p>
+                            <p class="card-rating-number">(2500)
+                            </p>
+                            <p class="fiyat">₺27,99 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ogrencilerGoruntuluyor  d-none   d-sm-block">
+                    <div class="card">
+                        <img class="card-img-top" src="img/blue.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Python ile Makine Öğrenmesi</h5>
+                            <p class="card-text">Dr. Şadi Evren Şeker</p>
+                            <p class="card-rating"> 4.5
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </p>
+                            <p class="card-rating-number">(2500)</p>
+                            <p class="fiyat">₺27,99 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ogrencilerGoruntuluyor d-none   d-sm-none  d-md-block">
+                    <div class="card">
+                        <img class="card-img-top" src="img/blue.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Python ile Makine Öğrenmesi</h5>
+                            <p class="card-text">Dr. Şadi Evren Şeker</p>
+                            <p class="card-rating"> 4.5
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </p>
+                            <p class="card-rating-number">(2500)
+                            </p>
+                            <p class="fiyat">₺27,99 </p>
+                            <span class="badge badge-warning">En Çok Satan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="ogrencilerGoruntuluyor d-none  d-md-none d-sm-none d-lg-block">
+                    <div class="card">
+                        <img class="card-img-top" src="img/blue.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Python ile Makine Öğrenmesi</h5>
+                            <p class="card-text">Dr. Şadi Evren Şeker</p>
+                            <p class="card-rating"> 4.5
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </p>
+                            <p class="card-rating-number">(2500)
+                            </p>
+                            <p class="fiyat">₺27,99 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="kapsaBosluk">
+        <div class="bosluk">
+        </div>
+        <div class="boslukYazi">
+            <h1>Kişisel öğrenim önerileri alın</h1>
+            <h5>Önerilen kategoriler ile ilgili birkaç soruyu yanıtlayın</h5>
+        </div>
+        <a href="" class="baslayin">Başlayın</a>
+    </div>
+    <section>
+        <h4><b>En popüler kategoriler</b></h4>
+        <div class="kategori">
+            <div class="card">
+                <img class="card-img-top" src="img/cate.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="kategoriText"> <b>Pazarlama </b> </h5>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/cate.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="kategoriText"> <b>Pazarlama </b> </h5>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/cate.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="kategoriText"> <b>Pazarlama </b> </h5>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/cate.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="kategoriText"> <b>Pazarlama </b> </h5>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/cate.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="kategoriText"> <b>Pazarlama </b> </h5>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/cate.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="kategoriText"> <b>Pazarlama </b> </h5>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/cate.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="kategoriText"> <b>Pazarlama </b> </h5>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/cate.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="kategoriText"> <b>Pazarlama </b> </h5>
+                </div>
+            </div>
+        </div>
+        <div class="topics">
+            <h4><b>Featured topics by category </b></h4>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-6 col-md-3">
+                        <b>Yazılım Geliştirme</b>
+                        <div class="tekTopic">
+                            <h6> Python</h6>
+                            <p> 22.411.847 öğrenci </p>
+                        </div>
+                        <div class="tekTopic">
+                            <h6> Python</h6>
+                            <p> 22.411.847 öğrenci </p>
+                        </div>
+                        <div class="tekTopic">
+                            <h6> Python</h6>
+                            <p> 22.411.847 öğrenci </p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3"">
+                     <b>Yazılım Geliştirme</b>
+                     <div class=" tekTopic">
+                        <h6> Python</h6>
+                        <p> 22.411.847 öğrenci </p>
+                    </div>
+                    <div class="tekTopic">
+                        <h6> Python</h6>
+                        <p> 22.411.847 öğrenci </p>
+                    </div>
+                    <div class="tekTopic">
+                        <h6> Python</h6>
+                        <p> 22.411.847 öğrenci </p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <b>Yazılım Geliştirme</b>
+                    <div class=" tekTopic">
+                        <h6> Python</h6>
+                        <p> 22.411.847 öğrenci </p>
+                    </div>
+                    <div class="tekTopic">
+                        <h6> Python</h6>
+                        <p> 22.411.847 öğrenci </p>
+                    </div>
+                    <div class="tekTopic">
+                        <h6> Python</h6>
+                        <p> 22.411.847 öğrenci </p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <b>Yazılım Geliştirme</b>
+                    <div class=" tekTopic">
+                        <h6> Python</h6>
+                        <p> 22.411.847 öğrenci </p>
+                    </div>
+                    <div class="tekTopic">
+                        <h6> Python</h6>
+                        <p> 22.411.847 öğrenci </p>
+                    </div>
+                    <div class="tekTopic">
+                        <h6> Python</h6>
+                        <p> 22.411.847 öğrenci </p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <button type="button" class="btn btn-info"><b>Explore More </b> </button>
+        </div>
+        </div>
+    </section>
+    <div class="egitmenOlun mobildeSakla">
+        <div class="bgegit">
+        </div>
+        <div class="egitmenOlun-info">
+            <div class="egitmenResim shadow">
+                <img src="img/girlbig.jpg" alt="">
+            </div>
+            <div class="egitmenInfo ">
+                <h1>Eğitmen olun
+                </h1>
+                <p>Dünyanın dört bir yanından en iyi eğitmenler Udemy'de milyonlarca öğrenciye eğitim veriyor.
+                    Sevdiğiniz şeyleri öğretmeniz için gereken araçları ve yetkinlikleri sağlıyoruz.
+                </p>
+                <button type="button" class="btn btn-info"><b>Hemen Eğitim Vermeye Başlayın</b> </button>
+            </div>
+        </div>
+    </div>
+    <br class="mobildeSakla">
+    <hr class="mobildeSakla">
+    <br class="mobildeSakla">
+    <div class="mercedes mobildeSakla">
+        <h4> <b>Her ölçekteki şirketler tarafından güvenilir
+            </b>
+        </h4>
+        <img src="img/mercedes.png" alt="">
+    </div>
+    <hr class="mobildeSakla">
+    <div class="egitmenOlun2 mobildeSakla">
+        <div class="bgegit">
+        </div>
+        <div class="egitmenOlun-info2">
+            <div class="egitmenInfo2 ">
+                <h1>Udemy for Business
+                </h1>
+                <p>Ekibinize Udemy'nin en iyi 5.000+ kursuna sınırsız erişim imkanı sunun.
+                </p>
+                <button type="button" class="btn btn-info"><b>Udemy for Business ürününü edinin</b> </button>
+            </div>
+            <div class="egitmenResim2 shadow">
+                <img src="img/boybig.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <br class="mobildeSakla">
+    <hr class="mobildeSakla">
+    <br class="mobildeSakla">
+    <div class="yt mobildeSakla">
+        <div class="vd">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QFIhEmOd6No" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="aciklama">
+            <h2> <b> Eğitimle hayatınızı dönüştürün </b> </h2>
+            <p>Mohamad Alaloush, Udemy'deki kurslara kaydolarak yazılım geliştirme alanında yeni bir kariyere başladı.
+                Siz
+                neler başarmak istersiniz?
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="footerss">
+            <div class="solFt">
+                <div class="solAlt sol-1">
+                    <a href="">Udemy for Business</a>
+                    <a href=""> Udemy'de Öğret</a>
+                    <a href=""> Uygulamayı edinin</a>
+                    <a href="">Hakkımızda</a>
+                    <a href="">İletişim</a>
+                </div>
+                <div class="solAlt sol-2">
+                    <a href=""> Udemy'de Öğret</a>
+                    <a href=""> Uygulamayı edinin</a>
+                    <a href="">Hakkımızda</a>
+                    <a href="">İletişim</a>
+                </div>
+                <div class="solAlt sol-2">
+                    <a href="">Udemy for Business</a>
+                    <a href=""> Udemy'de Öğret</a>
+                    <a href=""> Uygulamayı edinin</a>
+                    <a href="">Hakkımızda</a>
+                    <a href="">İletişim</a>
+                </div>
+                <div class="sagFt">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01"> <i class="fas fa-globe"></i>
+                            </label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Turkish</option>
+                            <option value="1">English</option>
+                            <option value="2">Spanish</option>
+                            <option value="3">Russian</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/logo-coral.svg" alt="" width="125">
+        <p>© 2020 Udemy, Inc.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
