@@ -12,8 +12,10 @@
 
     <!-- ###################### -->
     <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="filter.css">
 
     <!-- ###################### -->
+    <script src="filter.js"></script>
 
     <title>Udemy's Ftont-end</title>
 
@@ -103,10 +105,285 @@
             </div>
         </nav>
     </section>
+    <div class="result">
+        <div class="resultrow">
+            <div class="resultcolumn resultleft">
+                <div class="filter">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="allfilter">
+                        <button onclick="myFunction()"class="filterbtn">Click Me</button>
+                            <div id="mydiv">
+                                <label class="container">All levels
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  
+                                  <label class="container">Beginners
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  
+                                  <label class="container">Intermediate
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  
+                                  <label class="container">Expert
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                            </div>
+                            <button onclick="myFunction1()"class="filterbtn">Click Me</button>
+                            <div id="mydiv1">
+                                <label class="container">Free
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  
+                                  <label class="container">Paid
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                            </div>
+                            <button onclick="myFunction2()"class="filterbtn">Click Me</button>
+                            <div id="mydiv2">
+                                <label class="container">
+                                    <div class="starrating">
+                                        <img src="img/star.png">
+                                        <img src="img/star.png">
+                                        <img src="img/star.png">
+                                        <img src="img/star.png">
+                                        <img src="img/rating.png">
+                                        <span class="andup">&<span class="andup"> up</span></span>
+                                    </div>
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  
+                                  <label class="container">
+                                    <div class="starrating">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/blank.png">
+                                    <span class="andup">&<span class="andup"> up</span></span>
+                                    </div>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  
+                                  <label class="container">
+                                    <div class="starrating">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/rating.png">
+                                    <img src="img/blank.png">
+                                    <span class="andup">&<span class="andup"> up</span></span>
+                                    </div>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  
+                                  <label class="container">
+                                    <div class="starrating">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/star.png">
+                                    <img src="img/blank.png">
+                                    <img src="img/blank.png">
+                                    <span class="andup">&<span class="andup"> up</span></span>
+                                    </div>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                            </div>
+                            <button onclick="myFunction3()"class="filterbtn">Click Me</button>
+                            <div id="mydiv3">
+                                <label class="container">0-2 Hours
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  
+                                  <label class="container">3-6 Hours
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  
+                                  <label class="container">6-17 Hours
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  
+                                  <label class="container">17+ hours
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                            </div>
+                            <button onclick="myFunction4()"class="filterbtn">Click Me</button>
+                            <div id="mydiv4">
+                                <label class="container">English
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                  </label>
+                                  <label class="container">other
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                  </label>
+                            </div>
+                        </div>
+                      </div>
+                      
+                      <!-- Use any element to open the sidenav -->
+                      <span onclick="openNav()"><button class="filterbutton">Filter</button></span>
+                </div>
+            </div>
+            <div class="resultcolumn resultright">
+                <div class="content1">
+                    <div class="contentrow">
+                        <div class="contentcolumn imagecolumn">
+                            <img src="./img/blue.jpg">
+                        </div>
+                        <div class="contentcolumn textcolumn">
+                            <div class="infoclass">
+                                <div class="infoheader">
+                                    The Complete Python Course: Build 10 Real World OOP Programs
+                                </div>
+                                <div class="infoshort">
+                                    This <strong>Python</strong> For Beginners Course Teaches You The <strong>Python</strong> Language  Fast.
+                                </div>
+                                <div class="rating">
+                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg></span ><span class="language">|</span><span class="language">English</span>
+                                </div>
+                                <div class="time">
+                                   <span>24hr</span><span class="language">|</span><span class="language">326 videos</span><span class="language">|</span><span class="language">All levels</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contencolumn pricecolumn">
+                            ₹8530
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <hr>
+                    <div class="contentrow">
+                        <div class="contentcolumn imagecolumn">
+                            <img src="./img/blue.jpg">
+                        </div>
+                        <div class="contentcolumn textcolumn">
+                            <div class="infoclass">
+                                <div class="infoheader">
+                                    The Complete Python Course: Build 10 Real World OOP Programs
+                                </div>
+                                <div class="infoshort">
+                                    This <strong>Python</strong> For Beginners Course Teaches You The <strong>Python</strong> Language  Fast.
+                                </div>
+                                <div class="rating">
+                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg></span ><span class="language">|</span><span class="language">English</span>
+                                </div>
+                                <div class="time">
+                                   <span>24hr</span><span class="language">|</span><span class="language">326 videos</span><span class="language">|</span><span class="language">All levels</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contencolumn pricecolumn">
+                            ₹8530
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <hr>
+                    <div class="contentrow">
+                        <div class="contentcolumn imagecolumn">
+                            <img src="./img/blue.jpg">
+                        </div>
+                        <div class="contentcolumn textcolumn">
+                            <div class="infoclass">
+                                <div class="infoheader">
+                                    The Complete Python Course: Build 10 Real World OOP Programs
+                                </div>
+                                <div class="infoshort">
+                                    This <strong>Python</strong> For Beginners Course Teaches You The <strong>Python</strong> Language  Fast.
+                                </div>
+                                <div class="rating">
+                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg></span ><span class="language">|</span><span class="language">English</span>
+                                </div>
+                                <div class="time">
+                                   <span>24hr</span><span class="language">|</span><span class="language">326 videos</span><span class="language">|</span><span class="language">All levels</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contencolumn pricecolumn">
+                            ₹8530
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <hr>
+                    <div class="contentrow">
+                        <div class="contentcolumn imagecolumn">
+                            <img src="./img/blue.jpg">
+                        </div>
+                        <div class="contentcolumn textcolumn">
+                            <div class="infoclass">
+                                <div class="infoheader">
+                                    The Complete Python Course: Build 10 Real World OOP Programs
+                                </div>
+                                <div class="infoshort">
+                                    This <strong>Python</strong> For Beginners Course Teaches You The <strong>Python</strong> Language  Fast.
+                                </div>
+                                <div class="rating">
+                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg></span ><span class="language">|</span><span class="language">English</span>
+                                </div>
+                                <div class="time">
+                                   <span>24hr</span><span class="language">|</span><span class="language">326 videos</span><span class="language">|</span><span class="language">All levels</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contencolumn pricecolumn">
+                            ₹8530
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <hr>
+                    <div class="contentrow">
+                        <div class="contentcolumn imagecolumn">
+                            <img src="./img/blue.jpg">
+                        </div>
+                        <div class="contentcolumn textcolumn">
+                            <div class="infoclass">
+                                <div class="infoheader">
+                                    The Complete Python Course: Build 10 Real World OOP Programs
+                                </div>
+                                <div class="infoshort">
+                                    This <strong>Python</strong> For Beginners Course Teaches You The <strong>Python</strong> Language  Fast.
+                                </div>
+                                <div class="rating">
+                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg></span ><span class="language">|</span><span class="language">English</span>
+                                </div>
+                                <div class="time">
+                                   <span>24hr</span><span class="language">|</span><span class="language">326 videos</span><span class="language">|</span><span class="language">All levels</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contencolumn pricecolumn">
+                            ₹8530
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div class="setter">
+    </div>
     <br class="mobildeSakla">
-    <hr class="mobildeSakla">
     <br class="mobildeSakla">
     <br class="mobildeSakla">
+
     <hr class="mobildeSakla">
     <br class="mobildeSakla">
     <footer>
@@ -149,7 +426,7 @@
             </div>
         </div>
         <img src="img/logo-coral.svg" alt="" width="125">
-        <p>© 2020 Udemy, Inc.</p>
+        <p>© </p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
