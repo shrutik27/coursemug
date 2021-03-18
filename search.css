@@ -744,11 +744,12 @@ footer p {
         width:30%;
     }
     .resultright{
-        width:70%;
+        width:90%;
+        margin-top:30px;
     }
     .result{
-        margin-left:3%;
-        margin-right:2%;
+        margin-left:10%;
+        margin-right:0%;
     }
     .contentrow{
         flex-direction: column;
