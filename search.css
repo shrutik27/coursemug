@@ -759,4 +759,9 @@ footer p {
     .resultright img{
         width:90%;
     }
+    .filterbutton {
+        width:80px;
+        height:40px;
+        font-size: 20px;
+      }
  }
