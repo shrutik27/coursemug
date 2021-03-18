@@ -739,7 +739,7 @@ footer p {
     letter-spacing: -.02rem;
     font-size: 1.3rem;
  }
- @media only screen and (max-width: 700px) {
+ @media only screen and (max-width:450px) {
     .resultleft{
         width:30%;
     }
