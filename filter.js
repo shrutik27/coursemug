@@ -4,12 +4,15 @@ function openNav() {
     document.body.style.backgroundColor="grey";
     document.getElementById("mySidenav").style.backgroundColor="white";
     document.getElementById("filterbutton").style.backgroundColor="white";
+    document.body.style.overflow="hidden";
   }
   
   /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.body.style.backgroundColor = "white";
+    document.body.style.height="auto";
+    document.body.style.overflow="visible";
   }
   function myFunction() {
     var x = document.getElementById("mydiv");
