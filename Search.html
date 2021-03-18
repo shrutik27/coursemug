@@ -108,14 +108,16 @@
     <div class="result">
         <div class="resultrow">
             <div class="resultcolumn resultleft">
-                <div class="filter">
+                <div class="filter"id="filter">
                     <div id="mySidenav" class="sidenav">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/cancel.png"></a>
                     <div class="allfilter">
-                        <button onclick="myFunction()"class="filterbtn">Click Me</button>
+                        <hr>
+                        <div onclick="myFunction()"class="filterbtn"><strong>Level</strong></div>
+                        <hr>
                             <div id="mydiv">
                                 <label class="container">All levels
-                                    <input type="checkbox" checked="checked">
+                                    <input type="checkbox">
                                     <span class="checkmark"></span>
                                   </label>
                                   
@@ -134,10 +136,12 @@
                                     <span class="checkmark"></span>
                                   </label>
                             </div>
-                            <button onclick="myFunction1()"class="filterbtn">Click Me</button>
+                            <hr>
+                            <div onclick="myFunction1()"class="filterbtn"><strong>Price</strong></div>
+                            <hr>
                             <div id="mydiv1">
                                 <label class="container">Free
-                                    <input type="checkbox" checked="checked">
+                                    <input type="checkbox">
                                     <span class="checkmark"></span>
                                   </label>
                                   
@@ -146,7 +150,9 @@
                                     <span class="checkmark"></span>
                                   </label>
                             </div>
-                            <button onclick="myFunction2()"class="filterbtn">Click Me</button>
+                            <hr>
+                            <div onclick="myFunction2()"class="filterbtn"><strong>Rating</strong></div>
+                            <hr>
                             <div id="mydiv2">
                                 <label class="container">
                                     <div class="starrating">
@@ -157,7 +163,7 @@
                                         <img src="img/rating.png">
                                         <span class="andup">&<span class="andup"> up</span></span>
                                     </div>
-                                    <input type="checkbox" checked="checked">
+                                    <input type="checkbox">
                                     <span class="checkmark"></span>
                                   </label>
                                   
@@ -200,10 +206,12 @@
                                     <span class="checkmark"></span>
                                   </label>
                             </div>
-                            <button onclick="myFunction3()"class="filterbtn">Click Me</button>
+                            <hr>
+                            <div onclick="myFunction3()"class="filterbtn"><strong>Course Time</strong></div>
+                            <hr>
                             <div id="mydiv3">
                                 <label class="container">0-2 Hours
-                                    <input type="checkbox" checked="checked">
+                                    <input type="checkbox">
                                     <span class="checkmark"></span>
                                   </label>
                                   
@@ -222,10 +230,12 @@
                                     <span class="checkmark"></span>
                                   </label>
                             </div>
-                            <button onclick="myFunction4()"class="filterbtn">Click Me</button>
+                            <hr>
+                            <div onclick="myFunction4()"class="filterbtn"><strong>Language</strong></div>
+                            <hr>
                             <div id="mydiv4">
                                 <label class="container">English
-                                    <input type="checkbox" checked="checked">
+                                    <input type="checkbox">
                                     <span class="checkmark"></span>
                                   </label>
                                   <label class="container">other
@@ -237,10 +247,10 @@
                       </div>
                       
                       <!-- Use any element to open the sidenav -->
-                      <span onclick="openNav()"><button class="filterbutton">Filter</button></span>
+                      <span onclick="openNav()"><button class="filterbutton"id="filterbutton">Filter</button></span>
                 </div>
             </div>
-            <div class="resultcolumn resultright">
+            <div class="resultcolumn resultright"id="resultright">
                 <div class="content1">
                     <div class="contentrow">
                         <div class="contentcolumn imagecolumn">
@@ -255,7 +265,7 @@
                                     This <strong>Python</strong> For Beginners Course Teaches You The <strong>Python</strong> Language  Fast.
                                 </div>
                                 <div class="rating">
-                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg></span ><span class="language">|</span><span class="language">English</span>
+                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg>(4325 reviews)</span ><span class="language">|</span><span class="language">English</span>
                                 </div>
                                 <div class="time">
                                    <span>24hr</span><span class="language">|</span><span class="language">326 videos</span><span class="language">|</span><span class="language">All levels</span>
@@ -282,7 +292,7 @@
                                     This <strong>Python</strong> For Beginners Course Teaches You The <strong>Python</strong> Language  Fast.
                                 </div>
                                 <div class="rating">
-                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg></span ><span class="language">|</span><span class="language">English</span>
+                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg>(4325 reviews)</span ><span class="language">|</span><span class="language">English</span>
                                 </div>
                                 <div class="time">
                                    <span>24hr</span><span class="language">|</span><span class="language">326 videos</span><span class="language">|</span><span class="language">All levels</span>
@@ -309,7 +319,7 @@
                                     This <strong>Python</strong> For Beginners Course Teaches You The <strong>Python</strong> Language  Fast.
                                 </div>
                                 <div class="rating">
-                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg></span ><span class="language">|</span><span class="language">English</span>
+                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg>(4325 reviews)</span ><span class="language">|</span><span class="language">English</span>
                                 </div>
                                 <div class="time">
                                    <span>24hr</span><span class="language">|</span><span class="language">326 videos</span><span class="language">|</span><span class="language">All levels</span>
@@ -336,7 +346,7 @@
                                     This <strong>Python</strong> For Beginners Course Teaches You The <strong>Python</strong> Language  Fast.
                                 </div>
                                 <div class="rating">
-                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg></span ><span class="language">|</span><span class="language">English</span>
+                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg>(4325 reviews)</span ><span class="language">|</span><span class="language">English</span>
                                 </div>
                                 <div class="time">
                                    <span>24hr</span><span class="language">|</span><span class="language">326 videos</span><span class="language">|</span><span class="language">All levels</span>
@@ -363,7 +373,7 @@
                                     This <strong>Python</strong> For Beginners Course Teaches You The <strong>Python</strong> Language  Fast.
                                 </div>
                                 <div class="rating">
-                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg></span ><span class="language">|</span><span class="language">English</span>
+                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg>(4325 reviews)</span ><span class="language">|</span><span class="language">English</span>
                                 </div>
                                 <div class="time">
                                    <span>24hr</span><span class="language">|</span><span class="language">326 videos</span><span class="language">|</span><span class="language">All levels</span>
@@ -378,15 +388,15 @@
             </div>
           </div>
     </div>
-    <div class="setter">
-    </div>
-    <br class="mobildeSakla">
-    <br class="mobildeSakla">
-    <br class="mobildeSakla">
-
-    <hr class="mobildeSakla">
-    <br class="mobildeSakla">
     <footer>
+        <div class="setter">
+        </div>
+        <br class="mobildeSakla">
+        <br class="mobildeSakla">
+        <br class="mobildeSakla">
+    
+        <hr class="mobildeSakla">
+        <br class="mobildeSakla">
         <div class="footerss">
             <div class="solFt">
                 <div class="solAlt sol-1">
