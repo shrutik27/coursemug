@@ -753,9 +753,6 @@ footer p {
     .contentrow{
         flex-direction: column;
     }
-    body{
-        margin: unset;
-    }
     .resultright{
         padding-left:10px;
     }

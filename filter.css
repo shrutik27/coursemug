@@ -167,9 +167,9 @@
 }
 @media screen and (max-height: 700px) {
   .filterbutton{
-    height: 2.2rem;
-      min-width:3rem;
-      font-size: 1.2rem;
+    height: 2rem;
+    min-width:1rem;
+    font-size: 1rem;
   }
   .starrating img{
     height:1rem;
