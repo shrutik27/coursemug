@@ -767,4 +767,8 @@ footer p {
       .sagFt{
         width:9rem;
       }
+      .starrating img{
+          width:20px;
+          height:20px;
+      }
  }
