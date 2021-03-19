@@ -775,7 +775,8 @@ footer p {
       .sidenav {
         height:80%;
       }
-      .pricecolumn{
-          float:left;
+      .pricecolumn
+      {
+          margin-left: 0%;
       }
  }
