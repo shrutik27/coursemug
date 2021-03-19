@@ -656,6 +656,9 @@ footer p {
     .search-size {
         width: 30%;
     }
+    .sidenav {
+        height:90%;
+      }
 
     .header-kapsayici {
         display: flex;
