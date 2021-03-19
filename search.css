@@ -777,10 +777,10 @@ footer p {
           height:20px;
       }
       .sidenav {
-        height:80%;
+        height:90%;
       }
       .pricecolumn
       {
-          margin-left: 0%;
+          margin-left:2%;
       }
  }
