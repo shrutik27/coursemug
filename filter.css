@@ -165,5 +165,10 @@
   display: flex;
   flex-direction: row;
 }
-
-
+@media only screen and (max-width:450px) {
+  .filterbutton{
+    width:75px;
+    height:35px;
+    font-size: 18px;
+  }
+}
