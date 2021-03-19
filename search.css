@@ -743,6 +743,9 @@ footer p {
  path{
      fill:rgb(100, 98, 98);
  }
+ .footerss{
+     border-top: 1px rgb(219, 213, 213) solid;
+ }
  @media only screen and (max-width:450px) {
     .resultleft{
         width:30%;
