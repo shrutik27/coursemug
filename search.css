@@ -656,9 +656,6 @@ footer p {
     .search-size {
         width: 30%;
     }
-    .sidenav {
-        height:90%;
-      }
 
     .header-kapsayici {
         display: flex;
@@ -778,9 +775,6 @@ footer p {
       .starrating img{
           width:20px;
           height:20px;
-      }
-      .sidenav {
-        height:90%;
       }
       .pricecolumn
       {
