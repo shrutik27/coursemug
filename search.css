@@ -737,8 +737,11 @@ footer p {
     font-size: 1.2rem;
  }
  .infoshort,.rating,.time{
-     color:grey;
+     color:rgb(100, 98, 98);
      font-size: 0.9rem;
+ }
+ path{
+     fill:rgb(100, 98, 98);
  }
  @media only screen and (max-width:450px) {
     .resultleft{
