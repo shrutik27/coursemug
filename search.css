@@ -719,15 +719,12 @@ footer p {
  .infoheader{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
-    line-height: 1.2;
     letter-spacing: -.02rem;
-    font-size: 1.3rem; 
+    font-size: 1.2rem; 
  }
  .infoshort{
      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
-    line-height: 1.4;
-    font-size: 1rem;
  }
  .language{
      padding-left:10px;
@@ -737,7 +734,11 @@ footer p {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     letter-spacing: -.02rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+ }
+ .infoshort,.rating,.time{
+     color:grey;
+     font-size: 0.9rem;
  }
  @media only screen and (max-width:450px) {
     .resultleft{
