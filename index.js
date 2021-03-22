@@ -1,6 +1,8 @@
 var express = require('express');
 var mysql = require('mysql');
 var path = require('path');
+const bodyParser = require('body-parser');
+const { text } = require("body-parser");
 var port= process.env.PORT || 8080;
 
 const app = express();
@@ -10,6 +12,9 @@ app.set('views', path.join(__dirname,'views'));
 app.set('view engine','ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 
+//USE 
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.urlencoded({extended:false}));
 //START OF PAGES
 app.get('/', function(req, res) {
     res.render('home');
