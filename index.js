@@ -15,19 +15,27 @@ app.use(express.static(path.join(__dirname, 'public')));
 //USE 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.urlencoded({extended:false}));
+
 //START OF PAGES
 app.get('/', function(req, res) {
     res.render('home');
  });
-
+app.post('/search',function(req,res){
+    console.log(req.body.search);
+    var post  = req.body;
+    var go =post.search;
+    redirect='/search/'+go
+    res.redirect(redirect);
+});
 app.get('/search/:id', function(req, res) {
-     id=req.params.id;
-     dbConnection.execute("SELECT * from repository WHERE topic  like '%" + req.params.id + "%'  OR  course  like '%" + req.params.id + "%' OR description  like '%" + req.params.id + "%'" )
-     .then(([rows]) => {
-         res.render('search',{
-             info:rows
-         });
-     });
+     //id=req.params.id;
+     //dbConnection.execute("SELECT * from repository WHERE topic  like '%" + req.params.id + "%'  OR  course  like '%" + req.params.id + "%' OR description  like '%" + req.params.id + "%'" )
+     //.then(([rows]) => {
+        // res.render('search',{
+            // info:rows
+         //});
+    //});
+     res.render("search");
 });
   
 app.use('/', (req,res) => {
