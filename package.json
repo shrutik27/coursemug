@@ -1,0 +1,25 @@
+{
+  "name": "coursemug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shrutik27/coursemug.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shrutik27/coursemug/issues"
+  },
+  "homepage": "https://github.com/shrutik27/coursemug#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7"
+  }
+}
