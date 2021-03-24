@@ -28,7 +28,8 @@ app.post('/search',function(req,res){
     res.redirect(redirect);
 });
 app.get('/search/:id', function(req, res) {
-     //id=req.params.id;
+     id=req.params.id;
+     console.log(id)
      //dbConnection.execute("SELECT * from repository WHERE topic  like '%" + req.params.id + "%'  OR  course  like '%" + req.params.id + "%' OR description  like '%" + req.params.id + "%'" )
      //.then(([rows]) => {
         // res.render('search',{

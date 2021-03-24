@@ -125,7 +125,7 @@
     height: 400px;
     width: 100%;
     position: absolute;
-    background-image: url("img/bg.jpg");
+    background-image: url("/img/bg.jpg");
     background-repeat: no-repeat, repeat;
     background-position: center;
 }
