@@ -251,169 +251,34 @@
                 </div>
             </div>
             <div class="resultcolumn resultright"id="resultright">
-                <div class="content1">
-                    <div class="contentrow">
-                        <div class="contentcolumn imagecolumn">
-                            <img src="./img/blue.jpg">
-                        </div>
-                        <div class="contentcolumn textcolumn">
-                            <div class="infoclass">
-                                <div class="infoheader">
-                                    The Complete Python Course: Build 10 Real World OOP Programs
-                                </div>
-                                <div class="infoshort">
-                                    This Python For Beginners Course Teaches You The Python Language  Fast.
-                                </div>
-                                <div class="rating">
-                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg>(4325 reviews)</span ><span class="language">|</span><span class="language">English</span>
-                                </div>
-                                <div class="time">
-                                   <span>24hr</span><span class="language">|</span><span class="language">326 videos</span><span class="language">|</span><span class="language">All levels</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contencolumn pricecolumn">
-                            ₹8530
-                        </div>
-                    </div>
-                </div>
                 <div class="content">
+                    <% info.forEach(function(item, index){ %>
                     <hr>
                     <div class="contentrow">
                         <div class="contentcolumn imagecolumn">
-                            <img src="./img/blue.jpg">
+                            <img src="<%=item.img%>">
                         </div>
                         <div class="contentcolumn textcolumn">
                             <div class="infoclass">
                                 <div class="infoheader">
-                                    The Complete Python Course: Build 10 Real World OOP Programs
+                                    <%=item.title%>
                                 </div>
                                 <div class="infoshort">
-                                    This Python For Beginners Course Teaches You The Python Language  Fast.
+                                    <%=item.short%>
                                 </div>
                                 <div class="rating">
-                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg>(4325 reviews)</span ><span class="language">|</span><span class="language">English</span>
+                                    <span><%=item.rating%></span><span> rating</span ><span class="language">|</span><span class="language"><%=item.lan%></span>
                                 </div>
                                 <div class="time">
-                                   <span>24hr</span><span class="language">|</span><span class="language">326 videos</span><span class="language">|</span><span class="language">All levels</span>
+                                   <span><%=item.length%></span><span class="language">|</span><span class="language"><%=item.level%></span>
                                 </div>
                             </div>
                         </div>
-                        <div class="contencolumn pricecolumn">
-                            ₹8530
+                        <div class="contentcolumn pricecolumn">
+                            <%=item.price%>
                         </div>
                     </div>
-                </div>
-                <div class="content">
-                    <hr>
-                    <div class="contentrow">
-                        <div class="contentcolumn imagecolumn">
-                            <img src="./img/blue.jpg">
-                        </div>
-                        <div class="contentcolumn textcolumn">
-                            <div class="infoclass">
-                                <div class="infoheader">
-                                    The Complete Python Course: Build 10 Real World OOP Programs
-                                </div>
-                                <div class="infoshort">
-                                    This Python For Beginners Course Teaches You The Python Language  Fast.
-                                </div>
-                                <div class="rating">
-                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg>(4325 reviews)</span ><span class="language">|</span><span class="language">English</span>
-                                </div>
-                                <div class="time">
-                                   <span>24hr</span><span class="language">|</span><span class="language">326 videos</span><span class="language">|</span><span class="language">All levels</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contencolumn pricecolumn">
-                            ₹8530
-                        </div>
-                    </div>
-                </div>
-                <div class="content">
-                    <hr>
-                    <div class="contentrow">
-                        <div class="contentcolumn imagecolumn">
-                            <img src="./img/blue.jpg">
-                        </div>
-                        <div class="contentcolumn textcolumn">
-                            <div class="infoclass">
-                                <div class="infoheader">
-                                    The Complete Python Course: Build 10 Real World OOP Programs
-                                </div>
-                                <div class="infoshort">
-                                    This Python For Beginners Course Teaches You The Python Language  Fast.
-                                </div>
-                                <div class="rating">
-                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg>(4325 reviews)</span ><span class="language">|</span><span class="language">English</span>
-                                </div>
-                                <div class="time">
-                                   <span>24hr</span><span class="language">|</span><span class="language">326 videos</span><span class="language">|</span><span class="language">All levels</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contencolumn pricecolumn">
-                            ₹8530
-                        </div>
-                    </div>
-                </div>
-                <div class="content">
-                    <hr>
-                    <div class="contentrow">
-                        <div class="contentcolumn imagecolumn">
-                            <img src="./img/blue.jpg">
-                        </div>
-                        <div class="contentcolumn textcolumn">
-                            <div class="infoclass">
-                                <div class="infoheader">
-                                    The Complete Python Course: Build 10 Real World OOP Programs
-                                </div>
-                                <div class="infoshort">
-                                    This Python For Beginners Course Teaches You The Python Language  Fast.
-                                </div>
-                                <div class="rating">
-                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg>(4325 reviews)</span ><span class="language">|</span><span class="language">English</span>
-                                </div>
-                                <div class="time">
-                                   <span>24hr</span><span class="language">|</span><span class="language">326 videos</span><span class="language">|</span><span class="language">All levels</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contencolumn pricecolumn">
-                            ₹8530
-                        </div>
-                    </div>
-                </div>
-                <div class="content">
-                    <hr>
-                    <div class="contentrow">
-                        <div class="contentcolumn imagecolumn">
-                            <img src="./img/blue.jpg">
-                        </div>
-                        <div class="contentcolumn textcolumn">
-                            <div class="infoclass">
-                                <div class="infoheader">
-                                    The Complete Python Course: Build 10 Real World OOP Programs
-                                </div>
-                                <div class="infoshort">
-                                    This Python For Beginners Course Teaches You The Python Language  Fast.
-                                </div>
-                                <div class="rating">
-                                    <span>4</span><span> <svg id="icon-rating-star" viewBox="0 0 24 24" width="12" height="12"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z"></path></svg>(4325 reviews)</span ><span class="language">|</span><span class="language">English</span>
-                                </div>
-                                <div class="time">
-                                   <span>24hr</span><span class="language">|</span><span class="language">326 videos</span><span class="language">|</span><span class="language">All levels</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contencolumn pricecolumn">
-                            ₹8530
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
+                    <% }); %>
     </div>
     <footer>
         <div class="footerss">

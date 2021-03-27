@@ -1,8 +1,10 @@
 var express = require('express');
 var mysql = require('mysql');
 var path = require('path');
+var multer  = require('multer');
 const bodyParser = require('body-parser');
 const { text } = require("body-parser");
+const db = require('./public/js/db');
 var port= process.env.PORT || 8080;
 
 const app = express();
@@ -30,13 +32,11 @@ app.post('/search',function(req,res){
 app.get('/search/:id', function(req, res) {
      id=req.params.id;
      console.log(id)
-     //dbConnection.execute("SELECT * from repository WHERE topic  like '%" + req.params.id + "%'  OR  course  like '%" + req.params.id + "%' OR description  like '%" + req.params.id + "%'" )
-     //.then(([rows]) => {
-        // res.render('search',{
-            // info:rows
-         //});
-    //});
-     res.render("search");
+     db.execute("SELECT * from udacity" ).then(([rows]) => {
+     res.render('search',{
+         info:rows
+         });
+    });
 });
   
 app.use('/', (req,res) => {

@@ -730,12 +730,17 @@ footer p {
      padding-left:10px;
  }
  .pricecolumn{
+    float: right;
     margin-left:10%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     letter-spacing: -.02rem;
     font-size: 1.2rem;
  }
+ .imagecolumn img{
+    height:200px;
+    width: 300px;
+}
  .infoshort,.rating,.time{
      color:rgb(100, 98, 98);
      font-size: 0.9rem;
