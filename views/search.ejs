@@ -13,6 +13,8 @@
     <!-- ###################### -->
     <link rel="stylesheet" href="/css/search.css">
     <link rel="stylesheet" href="/css/filter.css">
+    <link rel="stylesheet" href="/css/home.css">
+
 
     <!-- ###################### -->
     <script src="/js/filter.js"></script>
@@ -26,7 +28,7 @@
     <header>
         <nav class="navbar shadow-sm navbar-expand-md navbar-light bg-light">
             <a class="navbar-brand" href="home.html">
-                <img src="img/logo-coral.svg" width="110" height="32" class="d-inline-block align-top" alt="Udemy">
+                <img src="/img/logo-coral.svg" width="110" height="32" class="d-inline-block align-top" alt="Udemy">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,29 +112,29 @@
             <div class="resultcolumn resultleft">
                 <div class="filter"id="filter">
                     <div id="mySidenav" class="sidenav">
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/cancel.png"></a>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="/img/cancel.png"></a>
                     <div class="allfilter">
                         <hr>
                         <div onclick="myFunction()"class="filterbtn"><strong>Level</strong></div>
                         <hr>
                             <div id="mydiv">
                                 <label class="container">All levels
-                                    <input type="checkbox">
+                                    <input type="checkbox"id="alllevel"onclick="validate()">
                                     <span class="checkmark"></span>
                                   </label>
                                   
-                                  <label class="container">Beginners
-                                    <input type="checkbox">
+                                  <label class="container">Begineer
+                                    <input type="checkbox"id="begineer"onclick="validate()">
                                     <span class="checkmark"></span>
                                   </label>
                                   
                                   <label class="container">Intermediate
-                                    <input type="checkbox">
+                                    <input type="checkbox"id="intermediate"onclick="validate()">
                                     <span class="checkmark"></span>
                                   </label>
                                   
                                   <label class="container">Expert
-                                    <input type="checkbox">
+                                    <input type="checkbox"id="expert"onclick="validate()">
                                     <span class="checkmark"></span>
                                   </label>
                             </div>
@@ -156,11 +158,11 @@
                             <div id="mydiv2">
                                 <label class="container">
                                     <div class="starrating">
-                                        <img src="img/star.png">
-                                        <img src="img/star.png">
-                                        <img src="img/star.png">
-                                        <img src="img/star.png">
-                                        <img src="img/rating.png">
+                                        <img src="/img/star.png">
+                                        <img src="/img/star.png">
+                                        <img src="/img/star.png">
+                                        <img src="/img/star.png">
+                                        <img src="/img/rating.png">
                                         <span class="andup">&<span class="andup"> up</span></span>
                                     </div>
                                     <input type="checkbox">
@@ -169,11 +171,11 @@
                                   
                                   <label class="container">
                                     <div class="starrating">
-                                    <img src="img/star.png">
-                                    <img src="img/star.png">
-                                    <img src="img/star.png">
-                                    <img src="img/star.png">
-                                    <img src="img/blank.png">
+                                    <img src="/img/star.png">
+                                    <img src="/img/star.png">
+                                    <img src="/img/star.png">
+                                    <img src="/img/star.png">
+                                    <img src="/img/blank.png">
                                     <span class="andup">&<span class="andup"> up</span></span>
                                     </div>
                                     <input type="checkbox">
@@ -182,11 +184,11 @@
                                   
                                   <label class="container">
                                     <div class="starrating">
-                                    <img src="img/star.png">
-                                    <img src="img/star.png">
-                                    <img src="img/star.png">
-                                    <img src="img/rating.png">
-                                    <img src="img/blank.png">
+                                    <img src="/img/star.png">
+                                    <img src="/img/star.png">
+                                    <img src="/img/star.png">
+                                    <img src="/img/rating.png">
+                                    <img src="/img/blank.png">
                                     <span class="andup">&<span class="andup"> up</span></span>
                                     </div>
                                     <input type="checkbox">
@@ -195,11 +197,11 @@
                                   
                                   <label class="container">
                                     <div class="starrating">
-                                    <img src="img/star.png">
-                                    <img src="img/star.png">
-                                    <img src="img/star.png">
-                                    <img src="img/blank.png">
-                                    <img src="img/blank.png">
+                                    <img src="/img/star.png">
+                                    <img src="/img/star.png">
+                                    <img src="/img/star.png">
+                                    <img src="/img/blank.png">
+                                    <img src="/img/blank.png">
                                     <span class="andup">&<span class="andup"> up</span></span>
                                     </div>
                                     <input type="checkbox">
@@ -279,7 +281,7 @@
                         </div>
                     </div>
                     <% }); %>
-    </div>
+                </div>
     <footer>
         <div class="footerss">
             <div class="solFt">
