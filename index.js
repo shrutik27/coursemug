@@ -34,10 +34,13 @@ app.post('/search',function(req,res){
 app.get('/search/:id', function(req, res) {
      id=req.params.id;
      console.log(id)
-     db.execute("SELECT * from udacity" ).then(([rows]) => {
+    rows= db.execute("SELECT * from udacity" ).then(([rows]) => {
      res.render('search',{
          info:rows
          });
+         if (document.getElementById('alllevel').checked) {
+            alert("checked");
+        }
     });
 });
   

@@ -53,17 +53,3 @@ function openNav() {
       x.style.display = "none";
     }
   }
-  function validate() {
-    if (document.getElementById('alllevel').checked) {
-        alert("checked");
-    }
-    if (document.getElementById('begineer').checked) {
-      alert("checked");
-  }
-  if (document.getElementById('intermediate').checked) {
-    alert("checked");
-  }
-  if (document.getElementById('expert').checked) {
-  alert("checked");
-  }
-}
