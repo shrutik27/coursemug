@@ -46,15 +46,22 @@ app.post('/search/:id', function(req, res) {
     id=req.params.id;
     var get=req.body;
     var level=get.level;
+    if(level==undefined){
+        level=['beginner','intermediate','expert']
+    }
     if(typeof(level)=='object'){
         level=level.join("','");
     }
-    console.log(typeof(level));
+    console.log(level);
     var language=get.language;
+    if(language==undefined){
+        language=['english','other']
+    }
     if(typeof(language)=='object'){
         language=language.join("','");
     }
-    rows= db.execute("SELECT * FROM udacity WHERE level IN ('" +level+ "') AND language IN ('" +language+ "') ").then(([rows]) => {
+    console.log(language);
+    rows= db.execute("SELECT * FROM udacity WHERE level IN ('" +level+ "') AND language IN ('" +language+ "')").then(([rows]) => {
     res.render('search',{
         info:rows
         });
