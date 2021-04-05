@@ -145,7 +145,7 @@
 .filterbtn{
   font-size: 1.3rem;
   border: none;
-  align-self:center;
+  padding-left:20%;
   background-color: white;
   cursor: pointer;
 }
@@ -171,4 +171,31 @@
     height:35px;
     font-size: 18px;
   }
+}
+
+.button{
+  color: #0f7c90;
+  background-color: transparent;
+  border: 1px solid #2896a9;
+  height:40px;
+  width:120px;
+  font-size:18px;
+  margin-top:10px;
+  margin-bottom: 20px;
+  margin-left:25%;
+  position: relative;
+  align-items: center;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    font-family: sf pro display,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+}
+.submit{
+  align-items: center;
+  align-self: center;
+  align-content: center;
 }

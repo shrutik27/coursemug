@@ -7,6 +7,7 @@ var multer  = require('multer');
 const bodyParser = require('body-parser');
 const { text } = require("body-parser");
 const db = require('./public/js/db');
+const { INSPECT_MAX_BYTES } = require('buffer');
 var port= process.env.PORT || 8080;
 
 const app = express();
@@ -38,10 +39,26 @@ app.get('/search/:id', function(req, res) {
      res.render('search',{
          info:rows
          });
-         if (document.getElementById('alllevel').checked) {
-            alert("checked");
-        }
     });
+});
+
+app.post('/search/:id', function(req, res) {
+    id=req.params.id;
+    var get=req.body;
+    var level=get.level;
+    if(typeof(level)=='object'){
+        level=level.join("','");
+    }
+    console.log(typeof(level));
+    var language=get.language;
+    if(typeof(language)=='object'){
+        language=language.join("','");
+    }
+    rows= db.execute("SELECT * FROM udacity WHERE level IN ('" +level+ "') AND language IN ('" +language+ "') ").then(([rows]) => {
+    res.render('search',{
+        info:rows
+        });
+   });
 });
   
 app.use('/', (req,res) => {
