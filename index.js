@@ -53,6 +53,7 @@ app.post('/search/:id', function(req, res) {
         level=level.join("','");
     }
     console.log(level);
+
     var language=get.language;
     if(language==undefined){
         language=['english','other']
@@ -60,8 +61,21 @@ app.post('/search/:id', function(req, res) {
     if(typeof(language)=='object'){
         language=language.join("','");
     }
+
+    var rating=get.rating;
+    if(language==undefined){
+        rating=0
+    }
+
+    var price=get.price;
+    if(price==undefined){
+        price=['free','paid']
+    }
+    if(typeof(price)=='object'){
+        price=price.join("','");
+    }
     console.log(language);
-    rows= db.execute("SELECT * FROM udacity WHERE level IN ('" +level+ "') AND language IN ('" +language+ "')").then(([rows]) => {
+    rows= db.execute("SELECT * FROM udacity WHERE level IN ('" +level+ "') AND language IN ('" +language+ "') AND ratingcat >= ('" +rating+ "') AND pricecat IN ('" +price+ "') ").then(([rows]) => {
     res.render('search',{
         info:rows
         });
