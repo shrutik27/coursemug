@@ -262,6 +262,7 @@
                 <div class="content">
                     <% info.forEach(function(item, index){ %>
                     <hr>
+                    <a href="<%=item.link%>">
                     <div class="contentrow">
                         <div class="contentcolumn imagecolumn">
                             <img src="<%=item.img%>">
@@ -285,6 +286,7 @@
                         <div class="contentcolumn pricecolumn">
                             <%=item.price%>
                         </div>
+                    </a>
                     </div>
                     <% }); %>
                 </div>
