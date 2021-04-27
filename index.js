@@ -35,7 +35,7 @@ app.post('/search',function(req,res){
 app.get('/search/:id', function(req, res) {
      id=req.params.id;
      console.log(id)
-    rows= db.execute("SELECT * from edxall" ).then(([rows]) => {
+    rows= db.execute("SELECT * from edxall WHERE title  like '%" + req.params.id + "%'  OR  short  like '%" + req.params.id + "%' " ).then(([rows]) => {
      res.render('search',{
          info:rows
          });
