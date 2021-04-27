@@ -35,7 +35,7 @@ app.post('/search',function(req,res){
 app.get('/search/:id', function(req, res) {
      id=req.params.id;
      console.log(id)
-    rows= db.execute("SELECT * from edxall,udacity" ).then(([rows]) => {
+    rows= db.execute("SELECT * from edxall" ).then(([rows]) => {
      res.render('search',{
          info:rows
          });
