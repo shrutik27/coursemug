@@ -35,14 +35,14 @@ app.post('/search',function(req,res){
 app.get('/search/:id', function(req, res) {
      id=req.params.id;
      console.log(id)
-    rows= db.execute("SELECT * from udacity,edxall,udemydevelopment WHERE title  like '%" + req.params.id + "%'  OR  short  like '%" + req.params.id + "%' " ).then(([rows]) => {
+    rows= db.execute("SELECT * from edxall,udacity" ).then(([rows]) => {
      res.render('search',{
          info:rows
          });
     });
 });
 
-app.post('/search/:id', function(req, res) {
+app.post('/search/:id/', function(req, res) {
     id=req.params.id;
     var get=req.body;
     var level=get.level;
@@ -81,7 +81,6 @@ app.post('/search/:id', function(req, res) {
         });
    });
 });
-  
 app.use('/', (req,res) => {
     res.status(404).send('<h1>404 Page Not Found!</h1>');
 });

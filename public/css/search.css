@@ -1,3 +1,11 @@
+.linkclass:hover{
+    text-decoration: none;
+    color: inherit
+}
+.linkclass{
+    text-decoration: none;
+    color: inherit
+}
 .result{
     margin-left:8.5%;
     margin-right:8.5%;
@@ -10,7 +18,7 @@
       width:20%;
   }
   .resultright{
-      width:80%;
+      width:90%;
   }
   
   /* Clear floats after the columns */
@@ -49,6 +57,7 @@
  }
  .pricecolumn{
     float: right;
+    top:30;
     margin-left:10%;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
