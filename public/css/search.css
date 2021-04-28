@@ -11,6 +11,8 @@
     margin-right:8.5%;
     margin-top:5%;
 }
+
+  
 .resultcolumn {
     float: left;
   }
@@ -20,7 +22,9 @@
   .resultright{
       width:90%;
   }
-  
+  .contentcolumn {
+    float: left;
+  }
   /* Clear floats after the columns */
   .resultrow:after {
     content: "";
@@ -29,7 +33,8 @@
   }
   
   .textcolumn{
-      margin-left:2%;
+      margin-left:3%;
+      width:60%
   }
   .contentrow {
     display: flex;
