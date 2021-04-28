@@ -35,7 +35,7 @@ app.post('/search',function(req,res){
 app.get('/search/:id', function(req, res) {
      id=req.params.id;
      console.log(id)
-    rows= db.execute("SELECT * from udemydevelopment WHERE title  like '%" + req.params.id + "%'  OR  short  like '%" + req.params.id + "%' UNION ALL SELECT * FROM edxall WHERE title  like '%" + req.params.id + "%'  OR  short  like '%" + req.params.id + "%' UNION ALL SELECT * FROM udacity WHERE  title  like '%" + req.params.id + "%'  OR  short  like '%" + req.params.id + "%'" ).then(([rows]) => {
+    rows= db.execute("SELECT * from udemydevelopment WHERE title  like '%" + id + "%'  OR  short  like '%" + id + "%' UNION ALL SELECT * FROM edxall WHERE title  like '%" + id + "%'  OR  short  like '%" + id + "%' UNION ALL SELECT * FROM udacity WHERE  title  like '%" + id + "%'  OR  short  like '%" + id + "%'" ).then(([rows]) => {
      res.render('search',{
          info:rows
          });
@@ -47,26 +47,37 @@ app.post('/search/:id/', function(req, res) {
     var get=req.body;
     var level=get.level;
     if(level==undefined){
-        level=['beginner','intermediate','expert']
+        level=['beginner','intermediate','expert','all levels']
+    }
+    if(level=='alllevel')
+    {
+        level=['beginner','intermediate','expert','all levels']
     }
     if(typeof(level)=='object'){
         level=level.join("','");
     }
-    console.log(level);
-
+    console.log(level)
     var language=get.language;
     if(language==undefined){
-        language=['english','other']
+        language=['english','Español']
+    }
+    if(language=='other')
+    {
+        language=['Español']
     }
     if(typeof(language)=='object'){
         language=language.join("','");
     }
 
     var rating=get.rating;
-    if(language==undefined){
+    if(rating==undefined){
         rating=0
     }
-
+    if(typeof(rating)=='object'){
+        rating = rating.map(Number)
+        rating=rating.join(",")
+    }
+    console.log(rating)
     var price=get.price;
     if(price==undefined){
         price=['free','paid']
@@ -74,8 +85,15 @@ app.post('/search/:id/', function(req, res) {
     if(typeof(price)=='object'){
         price=price.join("','");
     }
-    console.log(language);
-    rows= db.execute("SELECT * FROM udacity WHERE level IN ('" +level+ "') AND language IN ('" +language+ "') AND ratingcat >= ('" +rating+ "') AND pricecat IN ('" +price+ "') ").then(([rows]) => {
+    console.log(price)
+    var time=get.time;
+    if(time==undefined){
+        time=0
+    }
+    if(typeof(time)=='object'){
+        time=time.join("','");
+    }
+    rows= db.execute("SELECT * from udemydevelopment WHERE (title like '%" + id + "%' OR short like '%" + id + "%') AND  level IN ('" +level+ "') AND language IN ('" +language+ "') AND ratingcat >= ('" +rating+ "') AND lengthcat >=('"+time+"') AND pricecat IN ('" +price+ "') UNION ALL SELECT * FROM edxall WHERE (title  like '%" + id + "%'  OR  short  like '%" + id + "%') AND level IN ('" +level+ "') AND language IN ('" +language+ "') AND ratingcat >= ('" +rating+ "') AND lengthcat >=('"+time+"') AND pricecat IN ('" +price+ "') UNION ALL SELECT * FROM udacity WHERE  (title  like '%" + id + "%'  OR  short  like '%" + id + "%') AND level IN ('" +level+ "') AND language IN ('" +language+ "') AND ratingcat >= ('" +rating+ "') AND lengthcat >=('"+time+"') AND pricecat IN ('" +price+ "')").then(([rows]) => {
     res.render('search',{
         info:rows
         });
