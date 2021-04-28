@@ -99,7 +99,7 @@
         flex-direction: column;
     }
     .resultright{
-        padding-left:10px;
+        padding-left:0px;
     }
     .resultright img{
         width:90%;
