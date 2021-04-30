@@ -8,7 +8,7 @@ const bodyParser = require('body-parser');
 const { text } = require("body-parser");
 const db = require('./public/js/db');
 const { INSPECT_MAX_BYTES } = require('buffer');
-var port= process.env.PORT || 8080;
+var port= process.env.PORT || 8080 || 5000;
 
 const app = express();
 
@@ -26,7 +26,6 @@ app.get('/', function(req, res) {
     res.render('home');
  });
 app.post('/search',function(req,res){
-    console.log(req.body.search);
     var post  = req.body;
     var go =post.search;
     redirect='/search/'+go
@@ -34,7 +33,6 @@ app.post('/search',function(req,res){
 });
 app.get('/search/:id', function(req, res) {
      id=req.params.id;
-     console.log(id)
     rows= db.execute("SELECT * from udemydevelopment WHERE title  like '%" + id + "%'  OR  short  like '%" + id + "%' UNION ALL SELECT * FROM edxall WHERE title  like '%" + id + "%'  OR  short  like '%" + id + "%' UNION ALL SELECT * FROM udacity WHERE  title  like '%" + id + "%'  OR  short  like '%" + id + "%'" ).then(([rows]) => {
      res.render('search',{
          info:rows
@@ -56,7 +54,7 @@ app.post('/search/:id/', function(req, res) {
     if(typeof(level)=='object'){
         level=level.join("','");
     }
-    console.log(level)
+
     var language=get.language;
     if(language==undefined){
         language=['english','Español']
@@ -77,7 +75,7 @@ app.post('/search/:id/', function(req, res) {
         rating = rating.map(Number)
         rating=rating.join(",")
     }
-    console.log(rating)
+
     var price=get.price;
     if(price==undefined){
         price=['free','paid']
@@ -85,7 +83,7 @@ app.post('/search/:id/', function(req, res) {
     if(typeof(price)=='object'){
         price=price.join("','");
     }
-    console.log(price)
+
     var time=get.time;
     if(time==undefined){
         time=0
